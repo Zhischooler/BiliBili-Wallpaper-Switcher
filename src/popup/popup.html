@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Bilibili Wallpaper</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; width: 320px; padding: 12px; }
+    label { display:block; margin-top:8px; font-size:13px; }
+    .row { display:flex; gap:8px; align-items:center; }
+    button { margin-top:8px; }
+    input[type="range"] { width: 100%; }
+    .presets { margin-top:6px; display:flex; gap:6px; }
+    .preset-btn { width:32px; height:24px; border:1px solid #ccc; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <h4>Bilibili 壁纸</h4>
+
+  <label><input id="enabled" type="checkbox"> 启用壁纸</label>
+
+  <label>透明度 <span id="opacityVal">40%</span></label>
+  <input id="opacity" type="range" min="0" max="100" step="1" value="40">
+
+  <label>遮罩颜色</label>
+  <div class="row">
+    <input id="overlay" type="color" value="#000000">
+    <input id="overlayAlpha" type="range" min="0" max="100" value="0">
+    <span id="overlayAlphaVal">0%</span>
+  </div>
+  <div class="presets">
+    <button class="preset-btn" style="background:#000000" data-color="#000000"></button>
+    <button class="preset-btn" style="background:#ffffff" data-color="#ffffff"></button>
+    <button class="preset-btn" style="background:#ff5b5b" data-color="#ff5b5b"></button>
+    <button class="preset-btn" style="background:#4fbeff" data-color="#4fbeff"></button>
+  </div>
+
+  <label>使用自定义图片</label>
+  <input id="file" type="file" accept="image/*">
+  <div class="row">
+    <button id="clear">清除自定义背景</button>
+    <button id="openPage">在当前页刷新应用</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

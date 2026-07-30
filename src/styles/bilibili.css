@@ -1,0 +1,26 @@
+/* src/styles/bilibili.css */
+/* 壁纸宿主：放在页面下层，不阻塞交互 */
+#bb-wallpaper-root {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 遮罩（scrim）也保持在下层，默认透明，由 popup 控制具体 rgba 值 */
+#bb-wallpaper-scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: rgba(0,0,0,0);
+}
+
+/* 仅把需要的主容器提高层级（不要用 * 或全局覆盖） */
+.bb-bg-safeguard {
+  position: relative;
+  z-index: 1;
+}

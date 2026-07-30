@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili Wallpaper Switcher",
+  "version": "1.0.0",
+  "description": "在哔哩哔哩页面注入自定义壁纸，支持上传、透明度与遮罩颜色控制",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.bilibili.com/*"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "24": "icons/icon.png"
+    }
+  },
+  "icons": {
+    "24": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bilibili.com/*"
+      ],
+      "js": [
+        "src/content-bilibili.js"
+      ],
+      "css": [
+        "src/styles/bilibili.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
