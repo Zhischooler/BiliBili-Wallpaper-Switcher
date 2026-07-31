@@ -1,5 +1,8 @@
 # BiliBili-Wallpaper-Switcher
-在哔哩哔哩页面注入自定义壁纸的浏览器扩展（Manifest V3）。支持上传本地图片、调节透明度与遮罩颜色，适用于在 bilibili.com 页面自定义/替换背景图。
+# 语言
+- [English README](README-EN.md)
+# 介绍
+- 在哔哩哔哩页面注入自定义壁纸的浏览器扩展（Manifest V3）。支持上传本地图片、调节透明度与遮罩颜色，适用于在 bilibili.com 页面自定义/替换背景图。
 
 ## 功能
 - 在哔哩哔哩站内注入自定义壁纸
