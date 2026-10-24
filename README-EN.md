@@ -4,6 +4,9 @@
 # About
  > A browser extension (Manifest V3) that injects custom wallpapers into Bilibili pages. Supports uploading local images, adjusting transparency and mask color, and is suitable for customizing/replacing background images on the bilibili.com page.
 
+> [!IMPORTANT]
+> Project Not Update
+
 ## Function
 - Inject custom wallpapers into Bilibili site
 - Adjustable wallpaper transparency
